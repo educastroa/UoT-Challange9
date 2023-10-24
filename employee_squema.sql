@@ -38,7 +38,10 @@ CREATE TABLE departments (
 
 CREATE TABLE salaries (
     emp_no int   NOT NULL,
-    salary int   NOT NULL
+    salary int   NOT NULL,
+    CONSTRAINT pk_departments PRIMARY KEY (
+        emp_no
+     )
 );
 
 CREATE TABLE dept_manager (
